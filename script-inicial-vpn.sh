@@ -15,11 +15,11 @@ user nobody
 group nogroup
 persist-key
 persist-tun
-ca ca.crt
-cert client.crt
-key client.key
+ca /etc/openvpn/ca.crt
+cert /etc/openvpn/client${CLIENTE_NUMERO}.crt
+key /etc/openvpn/client${CLIENTE_NUMERO}.key
 remote-cert-tls server
-tls-auth ta.key 1
+tls-auth /etc/openvpn/ta.key 1
 cipher AES-256-CBC
 verb 3
 EOF
