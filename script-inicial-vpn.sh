@@ -27,8 +27,8 @@ EOF
 # Obtener los archivos de configuración del servidor
 CLIENTE_NUMERO="1"
 sudo scp eneko@esparzasolar.duckdns.org:/etc/openvpn/client/client${CLIENTE_NUMERO}/ca.crt /etc/openvpn/
-sudo scp eneko@esparzasolar.duckdns.org:/etc/openvpn/client/client${CLIENTE_NUMERO}/client.crt /etc/openvpn/
-sudo scp eneko@esparzasolar.duckdns.org:/etc/openvpn/client/client${CLIENTE_NUMERO}/client.key /etc/openvpn/
+sudo scp eneko@esparzasolar.duckdns.org:/etc/openvpn/client/client${CLIENTE_NUMERO}/client${CLIENTE_NUMERO}.crt /etc/openvpn/
+sudo scp eneko@esparzasolar.duckdns.org:/etc/openvpn/client/client${CLIENTE_NUMERO}/client${CLIENTE_NUMERO}.key /etc/openvpn/
 sudo scp eneko@esparzasolar.duckdns.org:/etc/openvpn/client/client${CLIENTE_NUMERO}/ta.key /etc/openvpn/
 
 # Iniciar el servicio OpenVPN
